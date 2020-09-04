@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Core1NoisesOff</string>
+    <string name="health">Santé</string>
+    <string name="sneeze">Éternuement</string>
+    <string name="blowNose">Nez</string>
+    <string name="medication">Médicament</string>
+</resources>
