@@ -9,21 +9,21 @@ import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
-
+    //Comments marked with a # were removed for correct implementation of string externalisation
     var healthValue = 10
-    var healthString = "Health "
-    var healthText = "$healthString $healthValue"
+    //#var healthString = "Health "
+    //#var healthText = "$healthString $healthValue"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Localisation()
+//       # Localisation()
 
         val textResult: TextView = findViewById(R.id.Health) as TextView
         textResult.setBackgroundColor(Color.parseColor("#00ff00"))
-        healthText = "$healthString $healthValue"
-        textResult.text = healthText
+        //#healthText = "$healthString $healthValue"
+        textResult.text = healthValue.toString()
 
         var sneezePlayer: MediaPlayer? = MediaPlayer.create(this, R.raw.male_sneezing_into_arm)
         var nosePlayer: MediaPlayer? = MediaPlayer.create(this, R.raw.human_fart)
@@ -82,8 +82,8 @@ class MainActivity : AppCompatActivity() {
                 Log.i("MAIN", "This should be impossible. Health was $healthValue and was set to 10")}
         }
 
-        healthText = "$healthString $healthValue"
-        textResult.text = healthText
+        //$healthText = "$healthString $healthValue"
+        textResult.text = healthValue.toString()
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
@@ -93,21 +93,21 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun Localisation() {
-        healthString = getString(R.string.health)
-        val sneezeString: String = getString(R.string.sneeze)
-        val noseString: String = getString(R.string.blowNose)
-        val medicationString: String = getString(R.string.medication)
-
-        val healthResult: TextView = findViewById(R.id.Health) as TextView
-        healthResult.text = healthString
-        val sneezeResult: TextView = findViewById(R.id.Sneeze) as TextView
-        sneezeResult.text = sneezeString
-        val noseResult: TextView = findViewById(R.id.BlowNose) as TextView
-        noseResult.text = noseString
-        val medicationResult: TextView = findViewById(R.id.Medication) as TextView
-        medicationResult.text = medicationString
-    }
+//    fun Localisation() {
+//        healthString = getString(R.string.health)
+//        val sneezeString: String = getString(R.string.sneeze)
+//        val noseString: String = getString(R.string.blowNose)
+//        val medicationString: String = getString(R.string.medication)
+//
+//        val healthResult: TextView = findViewById(R.id.Health) as TextView
+//        healthResult.text = healthString
+//        val sneezeResult: TextView = findViewById(R.id.Sneeze) as TextView
+//        sneezeResult.text = sneezeString
+//        val noseResult: TextView = findViewById(R.id.BlowNose) as TextView
+//        noseResult.text = noseString
+//        val medicationResult: TextView = findViewById(R.id.Medication) as TextView
+//        medicationResult.text = medicationString
+//    }
 }
 
 

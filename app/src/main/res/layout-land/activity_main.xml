@@ -12,8 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Health"
         android:layout_marginBottom="25dp"
+        android:text="@string/health"
         android:textSize="24sp" />
 
     <Button
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="25dp"
-        android:text="Sneeze" />
+        android:text="@string/sneeze" />
 
     <Button
         android:id="@+id/BlowNose"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="25dp"
-        android:text="BlowNose" />
+        android:text="@string/blowNose" />
 
     <Button
         android:id="@+id/Medication"
@@ -38,6 +38,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="25dp"
-        android:text="Medication"/>
+        android:text="@string/medication" />
 
 </LinearLayout>
